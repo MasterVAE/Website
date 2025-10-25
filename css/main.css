@@ -1,0 +1,29 @@
+@font-face 
+{
+    font-family: 'BlazmaRegular';
+    src: url('../fonts/Blazma-Regular.otf');
+}
+
+hdr
+{
+    font-size: 300%;
+    font-family: BlazmaRegular;
+    color: #ab058f;
+}
+
+div.head
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+    height: 60px;
+    text-align: center;
+    background-color: #040a80;
+}
+
+body.main
+{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
