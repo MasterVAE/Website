@@ -22,8 +22,8 @@
     justify-content: space-between;
 
     border: 10px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     position: fixed;
     top: 0;
@@ -65,7 +65,6 @@
 .nav-item
 {
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 23px;
     cursor: pointer;
     padding: 10px 15px;
@@ -83,16 +82,87 @@ body.main
 {
     margin: 0;
     padding: 0;
-    background-color: #333333;
+    background-color: #222222;
     padding-top: 100px;
+    justify-content: center;
 }
 
 .content {
+    width: 70%;
     padding: 20px;
     color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p
+.txt
 {
-    font-family: Razor;
+    font-family: Razer;
+    font-size: 20px;
+}
+
+.project-destription-name
+{
+    font-size: 200%;
+    font-family: BlazmaRegular;
+    color: #ab058f;
+    margin-top: 0;
+}
+
+.project-destription-desc
+{
+    font-family: Razer;
+    font-size: 110%;
+    margin-bottom: 0;
+}
+
+.theme
+{
+    font-size: 200%;
+    font-family: BlazmaRegular;
+    color: #ab058f;
+    margin: 0;
+    padding: 0;
+}
+
+.project
+{
+    width: 80%;
+    background-color: #333333;
+    border-radius: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: background-color 0.3s;
+}
+
+.project:hover
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-destription-div
+{
+    justify-content: center;
+    width: 60%;
+}
+
+a.plain-link {
+    color: inherit;           /* Наследует цвет от родителя */
+    text-decoration: none;    /* Убирает подчеркивание */
+    cursor: inherit;          /* Курсор как у обычного текста */
+}
+
+a.plain-link:hover,
+a.plain-link:active,
+a.plain-link:visited {
+    color: inherit;           /* Сохраняет цвет при любом состоянии */
+    text-decoration: none;    /* Убирает подчеркивание при наведении */
 }

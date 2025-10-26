@@ -7,17 +7,40 @@
   <body class="main">
     <div class="head">
       <div class="header-content">
-        <h1 class="header-title">Welcome to 3N1Ty website!</h1>
+        <h1 class="header-title">3N1TY LAB</h1>
         <div class="navigation">
           <ul class="nav-list">
-            <li class="nav-item">About</li>
-            <li class="nav-item">Projects</li>
+            <li class="nav-item"><a class="plain-link" href="#about">   About   </a></li>
+            <li class="nav-item"><a class="plain-link" href="#projects">Projects</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="content">
-      <p>This is my website to show my projects to world</p>
+      <div id="welcome">
+        <h2 class="theme">Welcome to 3N1TY Lab!</h2>
+        <p class="txt">Welcome to the place where worlds are created. 
+          In this lab, I keep track of my creative endeavors and projects.
+        </p>
+      </div>
+      <div id="about">
+        <h2 class="theme">About</h2>
+        <p class="txt">I am a programmer, web & game designer.</p>
+      </div>
+      <div id="projects">
+        <h2 class="theme">Projects</h2>
+        <table>
+          <tr>
+            <div class="project", onclick="window.location='https://store.steampowered.com/app/3541650/Gambling_Forever/';">
+              <img src="images/gambling.png" width="30%", height="30%">
+              <div class="project-destription-div">
+                <p class="project-destription-name">Gambling Forever</p>
+                <p class="project-destription-desc">Gamble with your friends in a game of dice! Bet on the total number of dice with a specific value on the table, while you can only see your dice. Using various items and magic dice, outluck your friends or figure out an impossible-to-lose strategy!</p>
+              </div>
+            </div>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </html>
