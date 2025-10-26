@@ -4,21 +4,79 @@
     src: url('../fonts/Blazma-Regular.otf');
 }
 
-hdr
+@font-face 
+{
+    font-family: 'Razer';
+    src: url('../fonts/dehinted-RazerF5-Regular.ttf');
+}
+
+.head
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    height: 80px;
+    background-color: #040a80;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title
 {
     font-size: 300%;
     font-family: BlazmaRegular;
     color: #ab058f;
+    margin: 0;
+    padding: 0;
 }
 
-div.head
+.navigation
 {
-    width: 100%;
-    margin: 0px;
-    padding: 0%;
-    height: 60px;
-    text-align: center;
-    background-color: #040a80;
+    display: flex;
+}
+
+.nav-list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item
+{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+    font-family: Razer;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 body.main
@@ -26,4 +84,15 @@ body.main
     margin: 0;
     padding: 0;
     background-color: #333333;
+    padding-top: 100px;
+}
+
+.content {
+    padding: 20px;
+    color: white;
+}
+
+p
+{
+    font-family: Razor;
 }
