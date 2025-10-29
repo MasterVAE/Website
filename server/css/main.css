@@ -168,6 +168,10 @@ body.main
     align-items: center;
 
     transition: all 0.3s ease;
+    
+    /* Добавляем для предотвращения выхода за границы */
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .project:hover 
@@ -228,24 +232,35 @@ a.plain-link:visited {
     }
     
     .content {
-        width: 90%;
-        padding: 15px;
+        width: 95%; /* Увеличиваем ширину контента */
+        padding: 15px 10px; /* Уменьшаем боковые отступы */
+        box-sizing: border-box;
     }
     
     .project {
-        width: 90%;
-        padding: 8%;
+        width: 100%; /* Меняем на 100% чтобы не вылазило за границы */
+        padding: 8% 5%; /* Уменьшаем боковые отступы */
         flex-direction: column;
         text-align: center;
+        margin-top: 8%;
+        box-sizing: border-box;
+        
+        /* Увеличиваем отступ между элементами */
+        gap: 30px;
     }
     
     .project-destription-div {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0; /* Убираем старый отступ */
+        box-sizing: border-box;
+        
+        /* Добавляем отступ сверху для текстового контента */
+        margin-top: 20px;
     }
     
     .project-destription-name {
         font-size: 150%;
+        margin-bottom: 15px; /* Увеличиваем отступ после названия */
     }
     
     .theme {
@@ -258,6 +273,7 @@ a.plain-link:visited {
     
     .project-destription-desc {
         font-size: 100%;
+        line-height: 1.5; /* Улучшаем читаемость */
     }
     
     #about, #projects {
@@ -292,18 +308,27 @@ a.plain-link:visited {
     }
     
     .content {
-        width: 95%;
-        padding: 10px;
+        width: 100%; /* Полная ширина на очень маленьких экранах */
+        padding: 10px 5px; /* Минимальные боковые отступы */
     }
     
     .project {
-        width: 95%;
-        padding: 10%;
-        margin-top: 8%;
+        width: 100%; /* Полная ширина */
+        padding: 10% 5%; /* Минимальные боковые отступы */
+        margin-top: 10%;
+        border-radius: 25px; /* Немного уменьшаем скругление */
+        
+        /* Еще больше увеличиваем отступ между элементами */
+        gap: 15px;
+    }
+    
+    .project-destription-div {
+        margin-top: 25px; /* Увеличиваем отступ сверху */
     }
     
     .project-destription-name {
         font-size: 130%;
+        margin-bottom: 20px; /* Увеличиваем отступ после названия */
     }
     
     .theme {
@@ -316,9 +341,36 @@ a.plain-link:visited {
     
     .project-destription-desc {
         font-size: 90%;
+        line-height: 1.6; /* Улучшаем читаемость */
     }
     
     #about, #projects {
         scroll-margin-top: 70px;
+    }
+}
+
+/* Дополнительный медиа-запрос для очень маленьких экранов */
+@media (max-width: 320px) {
+    .project {
+        padding: 8% 4%;
+        border-radius: 20px;
+        gap: 20px; /* Сохраняем хороший отступ */
+    }
+    
+    .project-destription-div {
+        margin-top: 20px;
+    }
+    
+    .project-destription-name {
+        font-size: 120%;
+        margin-bottom: 15px;
+    }
+    
+    .theme {
+        font-size: 120%;
+    }
+    
+    .txt {
+        font-size: 13px;
     }
 }
