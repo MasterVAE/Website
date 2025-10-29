@@ -199,3 +199,126 @@ a.plain-link:visited {
 #about, #projects {
     scroll-margin-top: 100px; /* Подберите значение под высоту вашего header */
 }
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .head {
+        height: 60px;
+        padding: 0 15px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .header-title {
+        font-size: 180%;
+    }
+    
+    .nav-item {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+    
+    .nav-list {
+        gap: 10px;
+    }
+    
+    body.main {
+        padding-top: 80px;
+        background-size: 300px 300px;
+    }
+    
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .project {
+        width: 90%;
+        padding: 8%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .project-destription-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .project-destription-name {
+        font-size: 150%;
+    }
+    
+    .theme {
+        font-size: 150%;
+    }
+    
+    .txt {
+        font-size: 16px;
+    }
+    
+    .project-destription-desc {
+        font-size: 100%;
+    }
+    
+    #about, #projects {
+        scroll-margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        height: 50px;
+        padding: 0 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    .header-title {
+        font-size: 140%;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    
+    .nav-list {
+        gap: 5px;
+    }
+    
+    body.main {
+        padding-top: 70px;
+        background-size: 250px 250px;
+    }
+    
+    .content {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .project {
+        width: 95%;
+        padding: 10%;
+        margin-top: 8%;
+    }
+    
+    .project-destription-name {
+        font-size: 130%;
+    }
+    
+    .theme {
+        font-size: 130%;
+    }
+    
+    .txt {
+        font-size: 14px;
+    }
+    
+    .project-destription-desc {
+        font-size: 90%;
+    }
+    
+    #about, #projects {
+        scroll-margin-top: 70px;
+    }
+}
