@@ -10,6 +10,11 @@
     src: url('../fonts/dehinted-RazerF5-Regular.ttf');
 }
 
+html 
+{
+    scroll-behavior: smooth;
+}
+
 .head
 {
     width: 100%;
@@ -46,6 +51,14 @@
     color: #ab058f;
     margin: 0;
     padding: 0;
+    cursor: default;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.header-title:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(171, 5, 143, 0.5);
 }
 
 .navigation
@@ -102,6 +115,9 @@ body.main
 {
     font-family: Razer;
     font-size: 20px;
+
+    cursor: default;
+    user-select: none; 
 }
 
 .project-destription-name
@@ -110,6 +126,9 @@ body.main
     font-family: BlazmaRegular;
     color: #ab058f;
     margin-top: 0;
+
+    cursor: default;
+    user-select: none; 
 }
 
 .project-destription-desc
@@ -117,6 +136,9 @@ body.main
     font-family: Razer;
     font-size: 110%;
     margin-bottom: 0;
+
+    cursor: default;
+    user-select: none; 
 }
 
 .theme
@@ -126,6 +148,9 @@ body.main
     color: #ab058f;
     margin: 0;
     padding: 0;
+
+    cursor: default;
+    user-select: none; 
 }
 
 .project
@@ -169,4 +194,8 @@ a.plain-link:active,
 a.plain-link:visited {
     color: inherit;           /* Сохраняет цвет при любом состоянии */
     text-decoration: none;    /* Убирает подчеркивание при наведении */
+}
+
+#about, #projects {
+    scroll-margin-top: 100px; /* Подберите значение под высоту вашего header */
 }
